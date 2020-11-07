@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "index.css" />
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Book Shoping</title>
+</head>
+<body>
+ <header>
+    <div name = "logo_place">
+      <a><h1 name = "redirect">Book Shopping</h1></a>
+    </div>
+   <div name = "dropdowns">
+      <img name = "dropdowns_name" src="https://img.icons8.com/ios-filled/100/000000/menu.png"/>
+      <div name = "dropdowns_link">
+        <ul>
+          <li style = "color:white"><a name = "author" href = "#">Authorization</a></li>
+        </ul>
+      </div>
+   </div>
+ </header>
+ <main>
+  <div name = "choise_bar">
+    <div name = "manage_header">
+      <span>Manage Watch</span>
+      <img id = "0" name = "hidden" src = "Logos/zacladca.svg"/>
+    </div>
+    <form name = "fillter_content">
+      <label for = "#">Price book:</label>
+      <div name = "prace_place">
+        <input name = "from" placeholder = "From" />
+        <input name = "to" placeholder = "To" />
+      </div>
+      <span>Genere book:</span>
+      <select>
+        <option>None</option>
+        <option>Action and adventure</option>
+        <option>Alternate history</option>
+        <option>Anthology</option>
+        <option>Chick lit</option>
+        <option>Children's</option>
+        <option>Classic</option>
+        <option>Comic book</option>
+        <option>Coming-of-age</option>
+        <option>Crime</option>
+        <option>Drama</option>
+        <option>Fairytale</option>
+        <option>Fantasy</option>
+        <option>Graphic novel</option>
+        <option>Historical fiction</option>
+        <option>Horror</option>
+        <option>Mystery</option>
+        <option>Paranormal romance</option>
+        <option>Picture book</option>
+        <option>Political thriller</option>
+        <option>Romance</option>
+        <option>Satire</option>
+        <option>Science fiction</option>
+        <option>Short story</option>
+        <option>Suspense</option>
+        <option>Thriller</option>
+        <option>Western</option>
+        <option>Young adult</option>
+      </select>
+      <span>Author book:</span>
+      <select>
+        <option>None</option>
+        <option>William Shakespeare</option>
+        <option>Agatha Christie</option>
+        <option>Barbara Cartland</option>
+        <option>Danielle Steel</option>
+        <option>Harold Robbins</option>
+        <option>Georges Simenon</option>
+        <option>Enid Blyton</option>
+        <option>Sidney Sheldon</option>
+        <option>J. K. Rowling</option>
+        <option>Gilbert Patten</option>
+        <option>Dr. Seuss</option>
+        <option>Eiichiro Oda</option>
+        <option>Leo Tolstoy</option>
+        <option>Corín Tellado</option>
+        <option>Jackie Collins</option>
+        <option>Horatio Alger</option>
+        <option>R. L. Stine</option>
+      </select>
+      <input type = "button" name = "submit" value = "Submit" />
+    </form>
+  </div>
+  <div name = "principal_content">
+  </div>
+ </main>
+
+<script src = "hidden_choise.js"></script>
+<script src = "Authorization/authoriszationForm.js"></script>
+<script src = "drawShells.js"></script>
+<script src = "fillterBooks.js"> </script>
+<script src = "redirect.js"></script>
+</body>
+</html>

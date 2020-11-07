@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "editor.css" />
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Editor Library</title>
+</head>
+<body>
+ <header>
+    <div name = "logo_place">
+      <a><h1 name = "redirect">Book Shopping Editor</h1></a>
+    </div>
+   <div name = "dropdowns">
+      <img name = "dropdowns_name" src="https://img.icons8.com/ios-filled/100/000000/menu.png"/>
+      <div name = "dropdowns_link">
+        <ul>
+          <li style = "color:white"><a href = "http://localhost/book_shopping/deleteSession.php">Exit</a></li>
+        </ul>
+      </div>
+   </div>
+ </header>
+ <main>
+  <div name = "choise_bar">
+    <div name = "manage_header">
+      <span>Manage Watch</span>
+      <img id = "0" name = "hidden" src = "Logos/zacladca.svg"/>
+    </div>
+    <form name = "fillter_content">
+      <label for = "#">Price book:</label>
+      <div name = "prace_place">
+        <input name = "from" placeholder = "From" />
+        <input name = "to" placeholder = "To" />
+      </div>
+      <span>Genere book:</span>
+      <select>
+        <option>None</option>
+        <option>Action and adventure</option>
+        <option>Alternate history</option>
+        <option>Anthology</option>
+        <option>Chick lit</option>
+        <option>Children's</option>
+        <option>Classic</option>
+        <option>Comic book</option>
+        <option>Coming-of-age</option>
+        <option>Crime</option>
+        <option>Drama</option>
+        <option>Fairytale</option>
+        <option>Fantasy</option>
+        <option>Graphic novel</option>
+        <option>Historical fiction</option>
+        <option>Horror</option>
+        <option>Mystery</option>
+        <option>Paranormal romance</option>
+        <option>Picture book</option>
+        <option>Political thriller</option>
+        <option>Romance</option>
+        <option>Satire</option>
+        <option>Science fiction</option>
+        <option>Short story</option>
+        <option>Suspense</option>
+        <option>Thriller</option>
+        <option>Western</option>
+        <option>Young adult</option>
+      </select>
+      <span>Author book:</span>
+      <select>
+        <option>None</option>
+        <option>William Shakespeare</option>
+        <option>Agatha Christie</option>
+        <option>Barbara Cartland</option>
+        <option>Danielle Steel</option>
+        <option>Harold Robbins</option>
+        <option>Georges Simenon</option>
+        <option>Enid Blyton</option>
+        <option>Sidney Sheldon</option>
+        <option>J. K. Rowling</option>
+        <option>Gilbert Patten</option>
+        <option>Dr. Seuss</option>
+        <option>Eiichiro Oda</option>
+        <option>Leo Tolstoy</option>
+        <option>Corín Tellado</option>
+        <option>Jackie Collins</option>
+        <option>Horatio Alger</option>
+        <option>R. L. Stine</option>
+      </select>
+      <input type = "button" name = "submit" value = "Submit" />
+    </form>
+  </div>
+  <div name = "principal_content">
+  </div>
+  <div name = "editor_place">
+      <span name = "Title">Add books:</span>
+      <form enctype = "multipart/form-data" method = "post" action = "add_images.php">
+        <div name = "about_images">
+          <label for = "cover">Cover Book</label>
+          <input id = "cover" type = "file" name = "Oblojca" />
+
+          <label for = "first">First Page:</label>
+          <input id = "first" type = "file" name = "1" />
+
+          <label for = "second">Second Page:</label>
+          <input id = "second" type = "file" name = "2" />
+      </div>
+      <div name = "about_book">
+        <label for = "name_book">Name:Book</label>
+        <input id = "name_book" name = "namebook" placeholder = "Name Book" />
+        <span>Genere book:</span>
+        <select name = "genere">
+          <option>None</option>
+          <option>Action and adventure</option>
+          <option>Alternate history</option>
+          <option>Anthology</option>
+          <option>Chick lit</option>
+          <option>Children's</option>
+          <option>Classic</option>
+          <option>Comic book</option>
+          <option>Coming-of-age</option>
+          <option>Crime</option>
+          <option>Drama</option>
+          <option>Fairytale</option>
+          <option>Fantasy</option>
+          <option>Graphic novel</option>
+          <option>Historical fiction</option>
+          <option>Horror</option>
+          <option>Mystery</option>
+          <option>Paranormal romance</option>
+          <option>Picture book</option>
+          <option>Political thriller</option>
+          <option>Romance</option>
+          <option>Satire</option>
+          <option>Science fiction</option>
+          <option>Short story</option>
+          <option>Suspense</option>
+          <option>Thriller</option>
+          <option>Western</option>
+          <option>Young adult</option>
+        </select>
+        <span>Author book:</span>
+        <select name = "author" >
+          <option>None</option>
+          <option>William Shakespeare</option>
+          <option>Agatha Christie</option>
+          <option>Barbara Cartland</option>
+          <option>Danielle Steel</option>
+          <option>Harold Robbins</option>
+          <option>Georges Simenon</option>
+          <option>Enid Blyton</option>
+          <option>Sidney Sheldon</option>
+          <option>J. K. Rowling</option>
+          <option>Gilbert Patten</option>
+          <option>Dr. Seuss</option>
+          <option>Eiichiro Oda</option>
+          <option>Leo Tolstoy</option>
+          <option>Corín Tellado</option>
+          <option>Jackie Collins</option>
+          <option>Horatio Alger</option>
+          <option>R. L. Stine</option>
+        </select>
+      </div>
+      <span>Price:</span>
+      <input name = "pricebook" placeholder = "price book < 9999" />
+      <input type = "button" id = "submit" value = "Save" />
+      </form>
+  </div>
+ </main>
+
+<script src = "hidden_choise.js"></script>
+<script src = "Authorization/authoriszationForm.js"></script>
+<script src = "draweShellsEditor.js"></script>
+<script src = "fillterBooks.js"> </script>
+<script src = "redirect.js"></script>
+<script src = "checkEditor.js"></script>
+
+</body>
+</html>
